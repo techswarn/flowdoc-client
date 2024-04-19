@@ -54,7 +54,7 @@ export function NodeProvider({ children }) {
   console.log(state);
 
   useEffect(function () {
-    fetch("http://127.0.0.1:3000/api/v1/node")
+    fetch("https://flowdoc-api-bsclg.ondigitalocean.app/api/v1/node")
       .then((res) => res.json())
       .then((data) => {
         const nodeData = [];
@@ -104,11 +104,14 @@ export function NodeProvider({ children }) {
       status: "loading",
     });
 
-    const res = await postData("http://127.0.0.1:3000/api/v1/node", data);
+    const res = await postData(
+      "https://flowdoc-api-bsclg.ondigitalocean.app/api/v1/node",
+      data
+    );
 
     if (res?.success === true) {
       //Fetch nodes again and set state
-      fetch("http://127.0.0.1:3000/api/v1/node")
+      fetch("https://flowdoc-api-bsclg.ondigitalocean.app/api/v1/node")
         .then((res) => res.json())
         .then((data) => {
           const nodeData = [];

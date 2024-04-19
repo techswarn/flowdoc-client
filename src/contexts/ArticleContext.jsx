@@ -9,7 +9,7 @@ export function ArticleProvider({ children }) {
   //   const { data, isLoading, error } = useFetch();
 
   useEffect(function () {
-    fetch("http://127.0.0.1:3000/api/v1/article")
+    fetch("https://flowdoc-api-bsclg.ondigitalocean.app/api/v1/article")
       .then((res) => res.json())
       .then((data) => {
         dispatch({ type: "datareceived", payload: data.Data, status: "ready" });
@@ -18,7 +18,7 @@ export function ArticleProvider({ children }) {
   }, []);
 
   const getArticles = async () => {
-    fetch("http://127.0.0.1:3000/api/v1/article")
+    fetch("https://flowdoc-api-bsclg.ondigitalocean.app/api/v1/article")
       .then((res) => res.json())
       .then((data) => {
         dispatch({

@@ -7,7 +7,7 @@ export function EdgeProvider({ children }) {
   const [state, dispatch] = useReducer(edgeReducer, initialEdges);
 
   useEffect(function () {
-    fetch("http://127.0.0.1:3000/api/v1/edge")
+    fetch("https://flowdoc-api-bsclg.ondigitalocean.app/api/v1/edge")
       .then((res) => res.json())
       .then((data) => {
         const edgeData = [];
@@ -32,7 +32,7 @@ export function EdgeProvider({ children }) {
       type: "loading",
       status: "loading",
     });
-    fetch("http://127.0.0.1:3000/api/v1/edge")
+    fetch("https://flowdoc-api-bsclg.ondigitalocean.app/api/v1/edge")
       .then((res) => res.json())
       .then((data) => {
         const edgeData = [];
