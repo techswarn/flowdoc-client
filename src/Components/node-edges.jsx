@@ -1,0 +1,125 @@
+const position = { x: 0, y: 0 };
+const edgeType = "smoothstep";
+
+export const initialNodes = [
+  {
+    id: "1",
+    type: "textUpdater",
+    //   style: { border: "1px solid #777", width: 200, height: 50 },
+    data: { label: "App platform debug flow" },
+    position,
+  },
+  {
+    id: "2",
+    data: { label: "Runtime" },
+    type: "textUpdater",
+    style: { border: "1px solid #777" },
+
+    position,
+  },
+  {
+    id: "2a",
+    data: { label: "Platform" },
+    type: "textUpdater",
+    style: { border: "1px solid #777" },
+    position,
+  },
+  {
+    id: "2b",
+    data: { label: "node 2b" },
+    type: "textUpdater",
+    style: { border: "1px solid #777" },
+    position,
+  },
+  {
+    id: "2c",
+    data: { label: "node 2c" },
+    type: "textUpdater",
+    style: { border: "1px solid #777" },
+    position,
+  },
+  {
+    id: "2d",
+    data: { label: "node 2d" },
+    type: "textUpdater",
+    style: { border: "1px solid #777" },
+    position,
+  },
+  {
+    id: "3",
+    data: { label: "Platform" },
+    type: "textUpdater",
+    style: { border: "1px solid #777" },
+    position,
+  },
+  {
+    id: "2b",
+    data: { label: "node 2b" },
+    type: "textUpdater",
+    style: { border: "1px solid #777" },
+    position,
+  },
+  {
+    id: "4",
+    data: { label: "node 4" },
+    type: "textUpdater",
+    style: { border: "1px solid #777" },
+    position,
+  },
+  {
+    id: "5",
+    data: { label: "node 5" },
+    type: "textUpdater",
+    style: { border: "1px solid #777" },
+    position,
+  },
+  {
+    id: "6",
+    data: { label: "node 6" },
+    type: "textUpdater",
+    style: { border: "1px solid #777" },
+    position,
+  },
+  {
+    id: "7",
+    data: { label: "node 7" },
+    type: "textUpdater",
+    style: { border: "1px solid #777" },
+    position,
+  },
+  {
+    id: "8",
+    data: { label: "node 8" },
+    type: "textUpdater",
+    style: { border: "1px solid #777" },
+    position,
+  },
+  {
+    id: "9",
+    data: { label: "node 9" },
+    type: "textUpdater",
+    style: { border: "1px solid #777" },
+    position,
+  },
+];
+
+export const initialEdges = [
+  { id: "e12", source: "1", target: "2", type: edgeType, animated: true },
+  { id: "e13", source: "1", target: "3", type: edgeType, animated: true },
+  { id: "e22a", source: "2", target: "2a", type: edgeType, animated: true },
+  { id: "e22b", source: "2", target: "2b", type: edgeType, animated: true },
+  { id: "e22c", source: "2b", target: "2c", type: edgeType, animated: true },
+  { id: "e2c2d", source: "2c", target: "2d", type: edgeType, animated: true },
+  { id: "e32d", source: "2d", target: "4", type: edgeType, animated: true },
+  { id: "e311d", source: "4", target: "5", type: edgeType, animated: true },
+  { id: "e345d", source: "5", target: "6", type: edgeType, animated: true },
+  { id: "e33d2d", source: "3", target: "7", type: edgeType, animated: true },
+  {
+    id: "e313sdws1d",
+    source: "7",
+    target: "8",
+    type: edgeType,
+    animated: true,
+  },
+  { id: "e32sde45d", source: "7", target: "9", type: edgeType, animated: true },
+];
